@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+:root {
+    --maindark: #121212;
+    --mainlight: #FAF0E6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--maindark);
+
+}
+
+*::selection {
+    background-color: #da1d3c;
+    color: var(--mainlight);
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    position: relative;
+    max-width: 80px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+
+header nav a {
+    color: var(--mainlight);
+    font-weight: bold;
+    margin-left: 40px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.space:first-of-type {
+    margin-top: 25px;
+}
+
+.content .textBox {
+    position: relative;
+    max-width: 600px;
+}
+
+.content .textBox h2 {
+    color: var(--mainlight);
+    font-size: 5em;
+    font-weight: 600;
+    padding-left: 100px;
+}
+
+.content .textBox h1 {
+    color: #da1d3c;
+    font-size: 10em;
+    font-weight: 900;
+    padding-left: 100px;
+    line-height: .85em;
+}
+
+.content .textBox p {
+    color: var(--mainlight);
+    font-weight: 700;
+    padding-left: 105px;
+}
+
+.content .imgBox {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 50px;
+    padding-right: 70px;
+}
+
+.content .imgBox img {
+    width: 90%;
+    border-radius: 0px;
+}
+
+.instructions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--mainlight);
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.instructions-content {
+    min-height: 80vh;
+}
+
+.bulletlist ul {
+    padding-top: 50px;
+}
+
+.bulletlist {
+    color: var(--mainlight);
+    font-weight: bold;
+    padding-left: 30%;
+    list-style: inside;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 2.5em;
+}
+
+.btn {
+    width: 200px;
+    background-color: #da1d3c;
+    border: none;
+    color: var(--mainlight);
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: .5em;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #7c0a1e;
+}
+
+.btn:visited {
+    text-decoration: none;
+}
+
+.download {
+    padding-top: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Animations*/
+
+[data-animate-in] {
+    opacity: 0;
+    transition: transform .8s ease, opacity .8s ease
+}
+
+[data-animate-in="up"] {
+    transform: translate3d(0, 24px, 0)
+}
+
+[data-animate-in="left"] {
+    /*normally at -25%*/
+    transform: translate3d(-24px, 0, 0)
+}
+
+[data-animate-in="right"] {
+    /*normally at 25%*/
+    transform: translate3d(24px, 0, 0)
+}
+
+[data-animate-in="down"] {
+    transform: translate3d(0, -24px, 0)
+}
+
+[data-animate-in="fadeIn"] {
+    transform: translate3d(0, 0, 0)
+}
+
+[data-animate-in].in-view {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transition: transform .8s ease, opacity .8s ease
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease
+}
+
+.page-loaded .fade-in,.page-loaded.fade-in {
+    opacity: 1
+}
+
+.isSafari.isTouch [data-animate-in],.isSafari.isTouch [data-animate-in="up"] {
+    opacity: 1;
+    transition: none;
+    transform: none
+}
+
+.icon-scroll,
+.icon-scroll:before {
+    position: absolute;
+    left: 100px
+} 

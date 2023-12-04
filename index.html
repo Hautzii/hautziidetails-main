@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Hautzii's details</title>
+    <meta name="description"
+        content="Instructions for details profile">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/master.css">
+    <link rel="shortcut icon" type="image/png" href="icon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+<body>
+
+    <section id="home">
+        <header data-animate-in>
+            <div>
+                <img src="icon.ico" alt="logo" class="logo" data-animate-in="down">
+            </div>
+            <nav data-animate-in="down">
+                    <a href="#home">Home</a>
+                    <a href="#instructions">Instructions</a>
+                    <a href="#download">Download</a>
+            </nav>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h1 data-animate-in="up">Hautzii's</h1>
+                <h2 data-animate-in="up" data-animate-in-delay="500">Details</h2>
+                <p data-animate-in="up" data-animate-in-delay="800" class="space">Easy to follow instructions.</p>
+                <p data-animate-in="up" data-animate-in-delay="1000" class="space">A clean details profile.</p>
+            </div>
+            <div class="imgBox">
+                <img src="detailsdark.png" alt="in-game-screenshot" data-animate-in="right" data-animate-in-delay="200">
+            </div>
+        </div>
+    </section>
+
+    <div class="instructions" id="instructions" data-animate-in="up" data-animate-in-delay="200">Instructions</div>
+
+    <div class="instructions-content">
+        <div class="bulletlist" data-animate-in="up" data-animate-in-delay="200">
+            <ul>
+                <li>Place the .tga file in your interface folder, located just before the AddOns folder.</li>
+                <li>Place the ElvUI_SkullflowerTP folder inside your AddOns folder.</li>
+                <li>Go in game, type /details options</li>
+                <li>In the Profiles tab, click on Import Profile and paste the content from the details.txt file.</li>
+                <li>Make sure the flat icons profile is selected.</li>
+                <li>In the Bars: General tab, paste : Interface\details-flat-wow.tga in the Custom Texture File box on the right hand side.</li>
+                <li>Make sure that the Bar Start After Icon option is disabled, it is located just under the texture file box.</li>
+                <li>Still in the Bars: General tab, in the bottom left corner, choose the SkullflowerNeon texture under overlay.</li>
+                <li>Choose the SkullflowerLight texture under background.</li>
+                <li>If you're not using ElvUI, you can still use the textures via the SharedMedia addon.</li>
+                <li>You'll want to dump the textures in SharedMedia_MyMedia > statusbar</li>
+            </ul>
+        </div>
+
+        <div class="download">
+            <button class="btn" onClick="window.open('https://www.mediafire.com/file/8tvt8h4fjxi3o9i/Details.rar/file')">Download</button>
+        </div>
+    </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    <script src="fadein.js"></script>
+    
+    
+</body>
+
+</html>
