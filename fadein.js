@@ -44,8 +44,6 @@ $(function() {
   
         if (el.isOnScreen()) {
           el.addClass("in-view");
-        } else {
-          el.removeClass("in-view");
         }
       }
     }
