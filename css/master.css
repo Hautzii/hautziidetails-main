@@ -182,6 +182,50 @@ header nav a {
     transform: translate3d(0, 24px, 0)
 }
 
+[data-animate-in="up2"] {
+    transform: translate3d(0, 48px, 0)
+}
+
+[data-animate-in="up3"] {
+    transform: translate3d(0, 72px, 0)
+}
+
+[data-animate-in="up4"] {
+    transform: translate3d(0, 96px, 0)
+}
+
+[data-animate-in="up5"] {
+    transform: translate3d(0, 120px, 0)
+}
+
+[data-animate-in="up6"] {
+    transform: translate3d(0, 144px, 0)
+}
+
+[data-animate-in="up7"] {
+    transform: translate3d(0, 168px, 0)
+}
+
+[data-animate-in="up8"] {
+    transform: translate3d(0, 192px, 0)
+}
+
+[data-animate-in="up9"] {
+    transform: translate3d(0, 216px, 0)
+}
+
+[data-animate-in="up10"] {
+    transform: translate3d(0, 240px, 0)
+}
+
+[data-animate-in="up11"] {
+    transform: translate3d(0, 264px, 0)
+}
+
+[data-animate-in="up12"] {
+    transform: translate3d(0, 288px, 0)
+}
+
 [data-animate-in="left"] {
     /*normally at -25%*/
     transform: translate3d(-24px, 0, 0)
