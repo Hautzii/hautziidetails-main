@@ -5,13 +5,16 @@
     --mainlight: #FAF0E6;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     background-color: var(--maindark);
-
 }
 
 *::selection {
@@ -154,10 +157,14 @@ header nav a {
     font-weight: bold;
     border-radius: .5em;
     text-decoration: none;
+    scale: 1;
+    transition: .3s ease;
 }
 
 .btn:hover {
     background-color: #7c0a1e;
+    scale: 1.2;
+    transition: .3s ease;
 }
 
 .btn:visited {
@@ -212,18 +219,6 @@ header nav a {
 
 [data-animate-in="up9"] {
     transform: translate3d(0, 216px, 0)
-}
-
-[data-animate-in="up10"] {
-    transform: translate3d(0, 240px, 0)
-}
-
-[data-animate-in="up11"] {
-    transform: translate3d(0, 264px, 0)
-}
-
-[data-animate-in="up12"] {
-    transform: translate3d(0, 288px, 0)
 }
 
 [data-animate-in="left"] {
